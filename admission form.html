@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <form>
+    
+    <h1 class="heading2">ADMISSION FORM</h1>
+    
+  <hr/>
+  
+  
+  
+    <fieldset>
+      <legend><b class="heading1">Biodata</b></legend>
+      <label for="nameinput"><b>Name</b></label>
+    <input required minlength="3" maxlength="20" type="name">
+    </br>
+  
+    <label for="ROLLinput"><b>Roll no:</b></label>
+    <input size="7" type="number">
+  </br>
+    <label for="dobinput"><b>Date of birth:</b></label>
+  <input size="7" type="date">
+
+  </br>
+  
+
+  <b>Religion</b>
+  <input type="radio" name="genre" value="Muslim" 
+ checked="checked" /> Muslim
+ <input type="radio" name="genre" value="non-Muslim" /> 
+ non-Muslim
+
+</br>
+
+  <b>Gender</b>
+  <input type="radio" name="genre" value="male" 
+ checked="checked" /> male
+ <input type="radio" name="genre" value="female" /> 
+ female
+
+  </br>
+    </fieldset>
+<fieldset>
+  <legend> <b class="heading1">Academic information</b></legend>
+  <b>Subjects:</b>
+  <select name="subjects">
+    <option value="Mathematics">Mathematics</option>
+    <option value="Chemistry">Chemistry</option>
+    <option value="Computer">Computer</option>
+    <option value="Physics">Physics</option>
+    <option value="biology">biology</option>
+    <option value="Statics">Statics</option>
+    <option value="English">English</option>
+    <option value="Urdu">Urdu</option>
+    <option value="IT">IT</option>
+    <option value="Islamiyat">Islamiyat</option>
+  </br>
+
+  <label for="MATRICMARKSinput">Matricmarks:</label>
+  <input required minlength="3" maxlength="50" type="MATRICMARKS">
+  
+  </br>
+  <label for="FSCMARKSinput"><b>FSCmarks</b></label>
+  <input required minlength="3" maxlength="50" type="FSCMARKS">
+</br>
+<label for="commentinpput"><b>Mention here your cocurriculsr activities:</b></label>
+  <input  required minlength="3" maxlength="50" type="comment">
+</br>
+    
+    </select>
+
+</fieldset>
+</br>
+
+<fieldset>
+  <legend><b class="heading1">  Contact information</b></legend>
+  <label>Email:<br />
+  <input type="text" name="email" /></label><br />
+  <label>Mobile:<br />
+  <input type="text" name="mobile" /></label><br />
+  <label>Telephone:<br />
+  <input type="text" name="telephone" /></label>
+  </fieldset>
+  <label for="profilephotoinput">profile photo</label>
+  
+  <input  type="file" accept="image/*" id="profilephotoinput">
+</fieldset></b>
+</br>
+  
+  
+  
+  
+  
+<label for="commentinput"><b>Comment:</b></label>
+<textarea rows="6" cols="50" id="comment" placeholder="YOUR COMMENT"></textarea>
+
+<button type="submit">submit</button>
+
+
+
+
+
+
+</form>
+
+
+
+
+</body>
+</html>

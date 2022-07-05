@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2>AVERAGE MARKS</h2>
+        <form onsubmit="calculate(); return false;">
+            <label for="firstnumber">First Number:</label>
+            <input type="number"  min =1 required id = "firstnumber" placeholder="enter your firstnumber">
+        </br>
+        <label for="secondnumber">Second Number:</label>
+            <input type="number" min =1 required id= "secondnumber" placeholder="enter your secondnumber">
+        </br>
+        <label for="thirdnumber">Third Number:</label>
+            <input type="number"  min =1 required id = "thirdnumber" placeholder="enter your thirdnumber">
+        </br>
+        <label for="fourthnumber">Fourth Number:</label>
+            <input type="number"  min =1 required id = "fourthnumber" placeholder="enter your fourthnumber">
+        </br>
+        <label for="firstnumber">Fifth Number:</label>
+            <input type="number"  min =1 required id = "fifthnumber" placeholder="enter your fifthnumber">
+        </br>
+        <label for="sixthnumber">Sixth Number:</label>
+            <input type="number"  min =1 required id = "sixthnumber" placeholder="enter your sixthnumber">
+        </br>
+        <label for="seventhnumber">Seventh Number:</label>
+            <input type="number"  min =1 required id = "seventhnumber" placeholder="enter your seventhnumber">
+        </br>
+        <label for="eighthnumber">Eighth Number:</label>
+            <input type="number"  min =1 required id = "eighthnumber" placeholder="enter your eighthnumber">
+        </br>
+        <label for="ninthnumber">Ninth Number:</label>
+            <input type="number"  min =1 required id = "ninthnumber" placeholder="enter your ninthnumber">
+        </br>
+        <label for="tenthnumber">Tenth Number:</label>
+            <input type="number"  min =1 required id = "tenthnumber" placeholder="enter your tenthnumber">
+        </br>
+        
+    
+            <button type="submit">calculate</button>
+        </form>
+        <h1 id="result"></h1>
+<script>
+
+function calculate() {
+    
+let firstnumber = document.querySelector("#firstnumber").value;
+let secondnumber = document.querySelector("#secondnumber").value;
+let thirdnumber = document.querySelector("#thirdnumber").value;
+let fourthnumber = document.querySelector("#fourthnumber").value;
+let fifthnumber = document.querySelector("#fifthnumber").value;
+let sixthnumber = document.querySelector("#sixthnumber").value;
+let seventhnumber = document.querySelector("#seventhnumber").value;
+let eighthnumber = document.querySelector("#eighthnumber").value;
+let ninthnumber = document.querySelector("#ninthnumber").value;
+let tenthnumber = document.querySelector("#tenthnumber").value;
+let result = (firstnumber+secondnumber+thirdnumber+fourthnumber+fifthnumber+sixthnumber+seventhnumber+eighthnumber+ninthnumber+tenthnumber)/ 10;
+document.querySelector("#result").innerHTML = `you average numbers are ${result}` ;
+
+}
+
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Math expressions:
+        Familiar operators</h1>
+        <h2>percentage calculator:</h2>
+        <form onsubmit="calculate(); return false;">
+            <label for="totalmarks">totalmarks:</label>
+            <input type="number"  min =1 required id = "totalmarks" placeholder="enter your totalmarks">
+        </br>
+        <label for="obtainedmarks">obtainedmarks:</label>
+            <input type="number" min =1 required id= "obtainedmarks" placeholder="enter your obtainedmarks">
+        </br>
+            <button type="submit">calculate</button>
+        </form>
+
+        
+<!-- let totalmarks =prompt("enter total marks")
+let obtainedmarks  = prompt("enter obtained marks")
+let result = obtainedmarks * 100 / totalmarks;//percantage -->
+
+<!-- //alert(result + "%"); -->
+<h1 id="result"></h1>
+<script>
+
+function calculate() {
+    
+let totalmarks = document.querySelector("#totalmarks").value;
+let obtainedmarks = document.querySelector("#obtainedmarks").value;
+let result = obtainedmarks * 100 / totalmarks;//percantage
+
+document.querySelector("#result").innerHTML = `you have got ${result}%` ;
+
+}
+
+        </script>
+</body>
+</html>

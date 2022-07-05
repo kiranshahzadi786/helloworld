@@ -1,0 +1,15 @@
+.heading2{
+   background-color:   aqua;
+border-radius: 10px;
+border-top: 5px solid red;
+border-bottom: 70px;
+padding: 50px;
+font-weight: 1000px;
+font-style: italic;
+text-shadow: 1px 1px 1px blue;
+
+}
+.heading1{
+   font-style: oblique;
+   color: blue;
+}

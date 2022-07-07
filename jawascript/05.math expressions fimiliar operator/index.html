@@ -33,6 +33,8 @@ function calculate() {
     
 let totalmarks = document.querySelector("#totalmarks").value;
 let obtainedmarks = document.querySelector("#obtainedmarks").value;
+totalmarks=Number(totalmarks)
+obtainedmarks=Number(obtainedmarks)
 let result = obtainedmarks * 100 / totalmarks;//percantage
 
 document.querySelector("#result").innerHTML = `you have got ${result}%` ;

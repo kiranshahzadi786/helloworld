@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .num{
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            background-color: aqua;
+            width: 700px;
+            height: 700;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="num" >
+    
+    <h1><b>Check the number is Even or odd</b></h1>
+    <h3>Enter a number and check whether it is even or odd</h3>
+    <form onsubmit="calculate(); return false;">
+        <label for="number">Number:</label>
+        <input type="number"  min =1 required id = "number" placeholder="enter your positivenumber">
+    </br><br>
+    <button type="submit">calculate</button>
+</form>
+<h1 id = result></h1>
+    <script>
+function calculate() {
+    
+let number = document.querySelector("#number").value;
+
+    if(number%2===0) {
+        
+        document.querySelector("#result").innerHTML = `Hurray ${number} is even number` ;
+    }
+// if the number is odd
+else {
+    document.querySelector("#result").innerHTML = `opps ${number} is odd number` ;
+}
+}
+
+    </script>
+    </div>
+</body>
+</html>
